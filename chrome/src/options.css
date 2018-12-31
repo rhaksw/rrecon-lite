@@ -1,0 +1,51 @@
+/* options.html */
+
+.rr-row {
+    clear: both;
+    text-align: right;
+    padding-bottom: 2em;
+}
+
+.rr-color {
+  color: rgb(63, 154, 222);
+  text-decoration: none;
+}
+
+.rr-row label {
+    margin-right: .5em;
+    float: left;
+    width: 15em;
+}
+
+input[type="checkbox"] {
+    margin-left: 0;
+}
+
+.rr-row input {
+    float: left;
+}
+
+.remove-subscription {
+    float: right;
+}
+
+#rr-opt-save {
+    float: right;
+}
+
+.rr-opt-h {
+    font-weight: bold;
+}
+
+#rr-subscriptions {
+    margin-bottom: 1.5em;
+}
+
+#rr-subscriptions div {
+    margin-bottom: .5em;
+}
+
+#rr-opt-error {
+    color: red;
+    min-height: 2em;
+}

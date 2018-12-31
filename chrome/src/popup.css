@@ -1,0 +1,32 @@
+#go-to-options, #rr-go {
+    float: right;
+}
+
+#rr-input {
+    overflow: hidden;
+    padding-right: .5em;
+}
+
+#user {
+    width: 100%;
+}
+
+#popup {
+    width: 300px;
+}
+
+body, input, button {
+    font-size: 1.3em;
+}
+
+.rr-color {
+    color: rgb(63, 154, 222);
+    text-decoration: none;
+}
+
+.unseen {
+    display: inline-block;
+    border-right: 1px solid lightgrey;
+    min-width: 1.5em;
+    margin-right: .6em;
+}

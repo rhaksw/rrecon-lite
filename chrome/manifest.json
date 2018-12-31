@@ -1,0 +1,39 @@
+{
+    "name": "rRecon lite",
+    "description": "rRecon lite shows your comments on reddit that have been removed.",
+    "version": "0.1.2.3",
+    "permissions": [
+        "storage",
+        "*://*.pushshift.io/*"
+    ],
+    "incognito": "split",
+    "icons": { "128": "icons/rr-chrome-icon-128.png",
+               "48": "icons/rr-chrome-icon-48.png",
+               "16": "icons/rr-chrome-icon-16.png"
+    },
+    "browser_action": {
+        "default_popup": "src/popup.html",
+        "default_icon": {
+            "16": "icons/rr-chrome-icon-16.png",
+            "24": "icons/rr-chrome-icon-24.png",
+            "32": "icons/rr-chrome-icon-32.png"
+        }
+    },
+    "web_accessible_resources": ["icons/rr-chrome-icon-128.png", "src/templates/*", "src/redesign.css"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.reddit.com/*"],
+            "js": ["lib/jquery-3.2.1.min.js", "lib/progressbar.min.js", "src/content.js"],
+            "css": ["src/content.css"]
+        }
+    ],
+    "background": {
+        "scripts": ["lib/jquery-3.2.1.min.js", "src/background.js"],
+        "persistent": false
+    },
+    "options_ui": {
+        "page": "src/options.html",
+        "open_in_tab": false
+    },
+    "manifest_version": 2
+}

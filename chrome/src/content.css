@@ -1,0 +1,247 @@
+.removedby {
+  color: red;
+}
+
+.removedby[data-removedby="automod-rem-mod-app"] {
+  color: green;
+}
+#rrecon .thing.comment {
+  margin-bottom: 1em;
+}
+#rrecon .entry {
+  margin-left: 1em;
+}
+#rrecon .tagline {
+  margin-bottom: .5em;
+}
+
+#rrecon .rr-error {
+  color: red;
+}
+
+#rrecon .rr-progressbar {
+   width:50px;
+   height:50px;
+   position: relative;
+}
+
+#rrecon #no-results {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+#rr-menu .flex-container, #rr-meta .flex-container {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: .5em;
+  margin-bottom: .5em;
+}
+
+#rrecon {
+  /*background: white;*/
+  padding: 5px;
+}
+
+#rrecon a.rr-color, a.rr-color {
+  color: rgb(63, 154, 222);
+  text-decoration: none;
+}
+
+.flex-container {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#rrecon hr {
+  border-top: dotted 1px;
+  margin: .5em 0em 0em 0em;
+}
+
+.rr-header {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom:.5em;
+}
+
+#rr-menu {
+  margin-top:.3em;
+}
+
+#rr-logo {
+  width:4em;
+  height:4em;
+}
+
+
+#ext-info {
+  margin-left:-1em;
+  margin-top: auto;
+}
+#ext-info, #rr-search-wrap, #search-options {
+  margin-right: 1em;
+}
+#rr-search {
+  width:6rem;
+  height:3em;
+  margin-bottom:.5em;
+}
+#rr-search-wrap div {
+  text-align:right;
+}
+
+#ext-title {
+  font-weight: bold;
+  font-size: 3em;
+  text-align: right;
+}
+#ext-title a {
+  text-decoration: none;
+}
+#ext-desc {
+  color: #616161;
+  font-weight: bold;
+}
+
+.rr-row:not(:last-child) {
+  margin-bottom: .3em;
+}
+
+#rr-report {
+  margin-left:3em;
+}
+
+.rr-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rr-row > label {
+  text-align: right;
+  margin-right: .5em;
+}
+#rr-filters label {
+  width:5em;
+}
+#search-options .rr-row > select {
+  width:8em;
+}
+#rr-filters select {
+  flex:1;
+}
+
+#rr-report .rr-row {
+  justify-content: flex-start;
+}
+
+#rr-menu-right, #clear-res {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+#rr-options-link {
+  text-align: right;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+#clear-res a {
+  font-size: .75em;
+  font-weight: normal;
+}
+
+.switch-container *,
+.switch-container *:before,
+.switch-container *:after {
+  box-sizing: border-box;
+}
+
+/* main styles */
+.switch {
+  width: 24rem;
+  position: relative;
+}
+.switch input {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.switch input:checked {
+  z-index: 1;
+}
+.switch input:checked + label {
+  opacity: 1;
+  cursor: default;
+}
+.switch input:not(:checked) + label:hover {
+  opacity: 0.5;
+}
+.switch label {
+  color: rgb(63, 154, 222);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+}
+label#unsub {
+  color: #ccc;
+}
+.switch .toggle-outside {
+  height: 100%;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  overflow: hidden;
+  transition: 0.25s ease all;
+}
+.switch .toggle-inside {
+  border-radius: 5rem;
+  background: #fff;
+  position: absolute;
+  transition: 0.25s ease all;
+}
+.switch-vertical {
+  width: 7rem;
+  height: 3rem;
+}
+.switch-vertical input {
+  height: 100%;
+  width: 1.5rem;
+  right: 0;
+  margin: 0;
+}
+.switch-vertical label {
+  line-height: 1.5rem;
+  display: block;
+  width: 4rem;
+  height: 50%;
+  margin: 0;
+  text-align: center;
+}
+.switch-vertical .toggle-outside {
+  background: #ccc;
+  position: absolute;
+  width: 1.5rem;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.switch-vertical .toggle-inside {
+  height: 1.25rem;
+  left: 0.125rem;
+  top: 0.125rem;
+  width: 1.25rem;
+}
+.switch-vertical input:checked ~ .toggle-outside .toggle-inside {
+  top: 0.125rem;
+}
+.switch-vertical input ~ input:checked ~ .toggle-outside .toggle-inside {
+  top: 1.625rem;
+}
+
+.switch-vertical input#radio-c:checked ~ .toggle-outside {
+    background: rgb(63, 154, 222);
+}

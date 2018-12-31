@@ -1,0 +1,4 @@
+/* Copyright (C) rDevCoder - All Rights Reserved
+ * Unauthorized copying of this project's files, via any medium is strictly prohibited
+ * Proprietary and confidential
+ */
